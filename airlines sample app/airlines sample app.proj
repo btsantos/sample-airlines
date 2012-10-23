@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>163ec050-1adf-4897-b5bf-e6b896dafa1b</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <AppIdentifier>com.telerik.airlines_sample_app</AppIdentifier>
+    <ProjectName>airlines sample app</ProjectName>
+    <IsRunnable>true</IsRunnable>
+    <TemplateAppName>Cordova200</TemplateAppName>
+    <AndroidPermissions>android.permission.CAMERA;android.permission.VIBRATE;android.permission.ACCESS_COARSE_LOCATION;android.permission.ACCESS_FINE_LOCATION;android.permission.ACCESS_LOCATION_EXTRA_COMMANDS;android.permission.READ_PHONE_STATE;android.permission.INTERNET;android.permission.RECEIVE_SMS;android.permission.RECORD_AUDIO;android.permission.MODIFY_AUDIO_SETTINGS;android.permission.READ_CONTACTS;android.permission.WRITE_CONTACTS;android.permission.WRITE_EXTERNAL_STORAGE;android.permission.ACCESS_NETWORK_STATE</AndroidPermissions>
+    <DeviceOrientations>Portrait;Landscape</DeviceOrientations>
+    <iOSStatusBarStyle>Default</iOSStatusBarStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources" />
+    <Folder Include="App_Resources\iOS">
+      <Platform>iOS</Platform>
+    </Folder>
+    <Folder Include="App_Resources\Android">
+      <Platform>Android</Platform>
+    </Folder>
+    <Folder Include="App_Resources\Android\drawable-hdpi">
+      <Platform>Android</Platform>
+    </Folder>
+    <Folder Include="App_Resources\Android\drawable-mdpi">
+      <Platform>Android</Platform>
+    </Folder>
+    <Folder Include="App_Resources\Android\drawable-ldpi">
+      <Platform>Android</Platform>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="jquery-mobile\images\ajax-loader.png" />
+    <Content Include="jquery-mobile\images\ajax-loader.gif" />
+    <Content Include="jquery-mobile\images\icons-18-black.png" />
+    <Content Include="jquery-mobile\images\icons-18-white.png" />
+    <Content Include="jquery-mobile\images\icons-36-black.png" />
+    <Content Include="jquery-mobile\images\icons-36-white.png" />
+    <Content Include="jquery-mobile\jquery-1.7.1.min.js" />
+    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.css" />
+    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.js" />
+    <Content Include="js\hello-world.js" />
+    <Content Include="styles\main.css" />
+    <Content Include="cordova.ios.js">
+      <Platform>iOS</Platform>
+      <TargetName>cordova.js</TargetName>
+    </Content>
+    <Content Include="cordova.android.js">
+      <Platform>Android</Platform>
+      <TargetName>cordova.js</TargetName>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
+</Project>

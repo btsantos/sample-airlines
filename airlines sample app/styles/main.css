@@ -1,0 +1,20 @@
+﻿body
+{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.ui-footer
+{
+    text-align: center;    
+}
+
+.err
+{
+    color: red;
+}
+
+#map_canvas
+{
+    text-align:center;
+}
