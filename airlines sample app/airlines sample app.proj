@@ -28,6 +28,10 @@
     <Folder Include="App_Resources\Android\drawable-ldpi">
       <Platform>Android</Platform>
     </Folder>
+    <Folder Include="images" />
+    <Folder Include="jquery-mobile" />
+    <Folder Include="jquery-mobile\images" />
+    <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\iOS\icon.png" />
@@ -51,17 +55,24 @@
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\ice_air.svg" />
+    <Content Include="images\ice_air_logo.svg" />
+    <Content Include="images\ice_air_seatmap.svg" />
+    <Content Include="images\seat.svg" />
     <Content Include="index.html" />
-    <Content Include="jquery-mobile\images\ajax-loader.png" />
     <Content Include="jquery-mobile\images\ajax-loader.gif" />
+    <Content Include="jquery-mobile\images\ajax-loader.png" />
     <Content Include="jquery-mobile\images\icons-18-black.png" />
     <Content Include="jquery-mobile\images\icons-18-white.png" />
     <Content Include="jquery-mobile\images\icons-36-black.png" />
     <Content Include="jquery-mobile\images\icons-36-white.png" />
-    <Content Include="jquery-mobile\jquery-1.7.1.min.js" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.css" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.js" />
-    <Content Include="js\hello-world.js" />
+    <Content Include="jquery-mobile\jquery-1.7.2.min.js" />
+    <Content Include="jquery-mobile\jquery.mobile-1.1.0.min.css" />
+    <Content Include="jquery-mobile\jquery.mobile-1.1.0.min.js" />
+    <Content Include="jquery-mobile\stocktheme.css" />
+    <Content Include="scripts\airlinedata.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\seatmapdrawing.js" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
