@@ -61,9 +61,10 @@ $('#home').live('pageshow', function () {
 						customerData = data;
 						$('#ffname').text(data.firstName);
 						$('#ffnum').text(data.ffNum);
-						$('#currentStatus').text(data.status);
 						$('#miles').text(data.miles);
-						$('#numberOfFlights').text('(' + data.flights.length + ')');
+						$('#currentStatus').text(data.status);
+
+                        $('#numberOfFlights').text('(' + data.flights.length + ')');
 						var flightList = $('#myTripsListView');
 						for (var i in data.flights) {
 							var flight = data.flights[i];
@@ -80,6 +81,7 @@ $('#home').live('pageshow', function () {
 								item.addClass('tripDetail');
 							}
 						}
+                        
 						$.mobile.changePage('#home', { transition: 'flip' });
 
 					});
