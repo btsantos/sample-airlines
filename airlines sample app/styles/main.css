@@ -1,8 +1,8 @@
-﻿body
+body
 {
     margin-left: 4px;
     margin-right: 4px;
-}
+} 
 
 .ui-footer
 {
@@ -12,6 +12,22 @@
 .err
 {
     color: red;
+}
+
+.logo {
+    float:left;
+    margin-right: 15px;
+}
+
+.infobox {
+}
+
+.infobox h1 {
+    font-size: 1em;
+}
+
+.infobox + * {
+    clear: both;
 }
 
 #map_canvas
