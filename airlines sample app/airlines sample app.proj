@@ -85,6 +85,10 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
+    <Content Include="styles\phone-1280.css" />
+    <Content Include="styles\phone-480.css" />
+    <Content Include="styles\phone-800.css" />
+    <Content Include="styles\tablet-1024-ldpi.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
