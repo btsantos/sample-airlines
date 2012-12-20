@@ -16,27 +16,38 @@
 		<script src="scripts/main.js" type="text/javascript"></script>
 	</head>
 	<body>
-
+        
+        <!-- home page -->
 		<div id="home" data-role="page" data-mini="true">
-			<div data-role="content">
-				<div class="infobox">
-					<img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAB6CAYAAABTAhYxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAC55JREFUeNrsXV1sHFcVvnYWO0md1IlBXYfSuDSt3JQqroSUqAiyUVBJC8jOQyUDD3bgobxUIbQPFB7iPiB4qBTnjQqVOBI/BR7iSAhSRFWnSMVBVHGrkrgQip262FXb1HacYps4Yb47e3bPzt6ZnV3PjGd2zpFGO7s7d37ud8853z333DsN6uhzA0qpo0okltIoVSAAiQhAApDIGkkmqBO1rm9Sp3q/WFPZ2cUldfD5FwWNMAGaXVxWuY5szeVP9HxeHRr+syASpokDSLVKf9fdehMJSYMgW37888J+rqOd7duatSu7VXW0blJd1qebFo3NfGBtVwSZMAACKN2dd1gAtGmf5AaEl7zU/4i6c/A3q9JGMXGuAGXVd/bcpz9rAYfIBkDCp0jAAI1MzARyHoB77MBuQSd4gKYDOxcIA7RRAApYgnTw0CJONgSgmGkR5FTvfov5tQhAQcnZgPyQM0KRVtIQew1KO2kIHCD0X8LoaKaVNIQSzUY0IAxJI2kIBaCg/VCaSUMoAIXhh9JKGkIBaGJ2QW9hSZpIQ2gjqmFqUZpIQ2gAvRbBkEEaSENiNSgtpCE0gNAXimJMp95JQ6hZPVFpUT2ThlABCrM/lBbSUBcaVM+kIVSA1iL5o95IQ+iZpSMRmrl6JA2ZsC9w1jJzq0lohFwfe1Ut/fZX6ubCVf193Y57VPOjX1eN2XZX0oAUrnrIVl2nct056zMX3iUaVpWQuHzmd+raD55UNy5PqBsz03pbufCG/v1jux9UjVvbjOU6P95qXTl6DU6giZteFTgf/WjA+B+0aeHwY2rl0j9cyx/NPaB6OrcLQKv1Q7PLK2rfHy+qsQ8/8gQHpq0xu80TpKF/vacOvfJW4TtMXa05eqkByGsAzwbnghp5d15/AiQTOE0Hvqo2PfdLa/uFBsoEEoHDQQJZONHzhcSShgh8kFIbMhnV+5lPu4JDmrO4clO98J859a1nvlsGzsan7Gm0DU3Nqmn/Q+r6X/+ibl7JA7+8rN66+Kb60rodxUZhnXPy2rLq+dQWlW3ZYPmkW9Wv3/i3aJBfP+QER7f2pnXqVO4eC4wBIzgF2tGySbUcf7agSfh+7/e+r048WNoIuCbBFw1YPkk0yCCL11d0BaEle4Hz0kM7VdeWjbavad+mafTGJ54yc8O8Jt24PKkBRZmurbeojpZmdfrtD0s0ae5/K+rAtlYdZcAwyPj7c6JBXlqElu0GTlFzvqI2PP6EN4G3NOeWHz5T4pP67/pEmSYNXpxREwtLiSQNkQHEA6dnLULgBc5qxQTScF6rkkYaIgOIMzmYuCJAmUDBIcndtrnkO8ycM9IgADHhiSRdW4uAwPTwfksQggZwcKS0A7v3tk0l35NCGiKdhk9+6HBn1pVt8UoeZs7eTVC2EjuEhjo1KimRhkgBIj8EpuVFiamSoQVOALjgeNq82OGJz93leo64k4bMWmgQOXKqZKc2jF25Vqhk+p+O5+DQ8aZyfgkIkYZ9Q7+P5bzYSDUIPohXgoltuWkK1yTnd2PFW+A8Pn9BvXzyp+rc6Kh6Z2rK9dg4k4bIl4JxRhU4SLRvavUABf0ZEzjOcqQ5X77f7h99o/drasoDoDiThoao14tDYocpAwemiYNi8id++jwoN7t8Xfu5+fl5ddXaAM69O3eqzZs3V7w/DPINj0+m0we5xeWIaTlNFLTACySTiUQ5bBAAgu2Tt9/u+/5g6iaGrkaaT0GJLnxtiVv1flv0AFFCo5+ePIH09OtT2rzx3499dnsZcQhCKKfhgZ8M10waTKus6L6Yy++x0iACye8NEhjYMGYUVuSBC7KCABKYHZGI1vXNgVR47E2c3R+qLZHE1NkMz+xk1c2Bb6aPxdl+KNmJHCkAaFpqPo4mDrYdy5GRH0pyMkciAOLO0963mdku9rsNSovUdFAAUaW7sRUOhMgaAHT+2z1SK3EFCKbo6ZHzen878xdh8nyRKgBCtHkgD5Bf3+Nc+lL8TwxIgjNO5Te4yEMgHDyKO4mfW2OaXUv/p9UDvDSY4UzcbxABSw6sX5B5n8tpho8mKMM0U28tjgPDtW1vQueuJgIgUzSZ+616JiOhAYS1r/34BLeFl4QoxESDhIp7i7w/SAASiSVAZ2XMJ94ADY39U2o3ziQBzAwgyUubqINdOsxPnWcTiwX7peWtQ2VxR86c0/E3YWmqkCFUBKHd6oo8rE5ajdgZoEayCsBBmVBJAlrBwef/JC9rijOLQ0tAEqC89izGNBs2FiBhMFC0Kcb9INhavJ8OQIW5rrYAtEq/REDhvali+taIZvvtK2EDo+nr2lHXlNy5VCeNT2HQ0bSMJ2g4fo98fpCX4KYwf6jPAkqouS2RLAXjV7BkDDp0x0f/XphwzIe7BaAYCUjE6fHLGqw335/To6S01o8AFCOBVoFIPPu3cd3rnrNIBsBKy2Be7AFyMkAygafHJzV42ZaNdQ1WogDiMrPwX/XCpXfqHqzEAlQJrPWZTF34rLpLu4K/GjtzTu+DqmP9g25rS2pSY11okJfPGp16T5MLaNc5ax/ahRSupJjCjEqJACzkkFMeOXry6KnvtTQrzitepQYgoym0tkFLsyAAC2Zwb/5TAIqZIOfbzvs+XwbYWiZRCkA+ASOTiPlPCD9FNQFaAKrSJJLQtBhoGYEWRoBXAFpVVGO6ZDoMBw3DCEFomgAUMmhkHhE/xOcuti8Axcw8OqeK0lwmaBxNp3FONhOA1lAoadE0a5DMpSTPx9xcCkAxFwFIABIRgAQgEQFIRAASgEQCl5JIApbsR+/1ZD5nmgvypg/vua8kDIFeMCZoIYxBZU2Ct28dyecJYIELu+xVnTzvFPr/yJnRwrqmxw7s0b/RLDXcC9KD+Xn9ngNimlSG9zbQcjE4L5ImkS+OHj2eE3XilehP5Q8Nv2ycuYF74vdrqq/ZxSV9XV73JQBRJNY5Q/tU737jsDBiScU1S9t8jUQWj8mqScP6dPR/cT265rLzduiE82zFa7idA8/ibIBofHxQzp6+mVUdVqX3dLbpinMT3A8t0ITGY1pzz3m/VF987mpOX2u7DqgSkBVjcUCawEGwDwULrzrLT4Llggc/OXaprGWYBA+Fc0Y9BQVgcIBQqaYRU5p9QVrkJjQrA1rZ5wKQm/C5q7gONA0TCJDkgmt6+iCabUDg4M0g/EbpPQxcJvPBP76ZAKByWII/6uFkO/xfHFzr7rzDeBwFM03PycU2t1f0xDRK9apFcI3T+Yg3rdjV6G2O2ktU3o/QfBe+mYQiuNw8RCEU8qdWj8ZBFVqLJqMsnoH7bfiuWoX8IHx0RRPnJAR+BA/unIjVMPCzsuPwRmCcExqKDdNNonhvD3wJKpVMEd1rJS1x154dBXNIqV0Emp864y+VonlROBeVDXw8yG15MZPAJOTyWTN4b8/I4HQkGnRscbeuCFy3Lw8QNKC7StNE5gyOnhgZGh5+6/fpi7j1QCOBpaJUsIoA8Yr22yJMCzN42VzQUqzVDVNjejOXXw2vxs4DJFQgKofOgd+qBYi0D2ws1/9wGRHxUw+wLrSoBe6Ng1PRB/GRvsN5shC0kHPlD+xHS8l/ODNp/DhoosycndYy6xx1gnL7hv5QsqGScW9+nwf1bFuTbIGU+QLIHo61eToKoj9ELY4muToryEQSsHkxNbS0al5ZwxsOWCDdE65DJsO5GK3TzHFAvPo4XtqDZ4LFcLLW43kt6KtiUjTVgd2BrSInAb1ucHMUQotztlC0GP6wJpJAx3mt2MtNnR8NQosjE2V6nUEl1gmQ0OjI5FVPDu4ukAPT/VVLFngd4L2uWPijDCB6ITo/IR4AB+NhnNM4bOazVFLW3fYv5Vv/jJEV4jtCP2RK6Xh8mrQLLQ7Xx/H8nlAxx0cvlDQG0znQ8uHYETUh9kbPUOlZqBEN5juTJsE92BGMdg0irs/Pa7oGrwOAi2eJ1TR8EYlmC0Aiwcr/BRgAwzpeHnsg8W4AAAAASUVORK5CYII=" />
-					<h1>
-						Hi <span id="ffname"></span>!
-					</h1>
-					<p>
-						<label for="ffnum">Ice Miles #</label>
-						<span class="inlineData" id="ffnum"></span>
-					</p>
-					<p>
-						<label for="miles">Total Miles:</label>
-						<span class="inlineData" id="miles"></span>
-					</p>
-					<p>
-						<span id="currentStatus">&nbsp;</span>
-					</p>
+			<div data-role="header">
+                <h1>Hi <span id="ffname"></span>!</h1>
+			</div>
+			<div class="info-wrapper">
+				<div class="info-wrapper-left">
+					<img class="ice-logo"/>
 				</div>
-
+                
+                <div class="info-wrapper-right">
+					<div class="info">
+                        <div class="info-data" id="ffnum"></div>
+						<div class="info-label" for="ffnum">Ice Miles:</div>
+                        <div class="clear"></div>
+					</div>
+					<div class="info">
+                        <div class="info-data" id="miles"></div>
+						<div class="info-label" for="miles">Total Miles:</div>
+                        <div class="clear"></div>
+					</div>
+					<div class="info">
+                        <div class="info-data" id="currentStatus">&nbsp;</div>
+						<div class="info-label" for="currentStatus">Ice Priority:</div>
+                        <div class="clear"></div>
+					</div>
+				</div>
+                <div class="clear"></div>
+            </div>
+           
+			<div data-role="content">
 				<ul data-role="listview" id="myTripsView" data-inset="true" data-theme="d">
 					<li>
 						<a href="#myTrips">

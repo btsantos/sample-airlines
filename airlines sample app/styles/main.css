@@ -1,11 +1,30 @@
-body
-{
-    margin-left: 4px;
-    margin-right: 4px;
+body {
+    
 } 
-
-.ui-footer
-{
+.ui-page {
+    background:#d3dfe5;
+}
+.ui-content {
+    padding:1em;
+}
+.ui-header.ui-bar-a {
+    background: rgb(147,172,185); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(147,172,185,1) 0%, rgba(109,138,152,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(147,172,185,1)), color-stop(100%,rgba(109,138,152,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(147,172,185,1) 0%,rgba(109,138,152,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(147,172,185,1) 0%,rgba(109,138,152,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(147,172,185,1) 0%,rgba(109,138,152,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(147,172,185,1) 0%,rgba(109,138,152,1) 100%); /* W3C */
+    border:1px solid #a7b9c1;
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-color:#809ea8;
+}
+.ui-header.ui-bar-a > .ui-title {
+    text-shadow:none;
+    margin: .4em 30% .4em;
+}
+.ui-footer {
     text-align: center;    
 }
 
@@ -14,22 +33,66 @@ body
     color: red;
 }
 
-.logo {
+.info-wrapper {
+	background: rgb(6, 123, 152); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(6, 123, 152, 1)), color-stop(100%, rgba(41, 192, 227, 1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(6, 123, 152, 1) 0%, rgba(41, 192, 227, 1) 100%); /* W3C */
+    padding:0.5em;
+    border-width:0px;
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.5),0 1px 1px rgba(255,255,255,1);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.5),0 1px 1px rgba(255,255,255,1);
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.5),0 1px 1px rgba(255,255,255,1);
+}
+
+.info-wrapper-left {
     float:left;
-    margin-right: 15px;
+    width:25%;
+}
+.info-wrapper-right {
+    float:right;
+    width:75%;
+}
+.info {
+    margin:0.6em 0em;
+    position:relative;
+    right:0;
+}
+.info > .info-label {
+    color:#054251;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    float:right;
+    margin-right:10px;
+    font-size:0.8em;
+    vertical-align:middle;
+    padding:0.3em 0em;
 }
 
-.infobox {
+.info > .info-data {
+    color:#fff;
+    text-shadow:none;
+    padding:0.3em 1em;
+    background:rgba(0,0,0,0.15);
+    border-radius:1em;
+    width:40%;
+    display:inline;
+    float:right;
+    font-size:0.8em;
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.3),0 1px 1px rgba(255,255,255,0.2);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3),0 1px 1px rgba(255,255,255,0.2);
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3),0 1px 1px rgba(255,255,255,0.2);
 }
-
-.infobox h1 {
-    font-size: 1em;
+.ice-logo {
+   content:url("../images/ice_air_logo.png");
+   background-size:100%;
+    -webkit-device-pixel-ratio:1.5;
 }
-
-.infobox + * {
-    clear: both;
+.clear {
+    clear:both;
 }
-
 #map_canvas
 {
     text-align:center;

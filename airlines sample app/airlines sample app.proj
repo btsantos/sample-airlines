@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\ice_air.svg" />
+    <Content Include="images\ice_air_logo.png" />
     <Content Include="images\ice_air_logo.svg" />
+    <Content Include="images\ice_air_logo@x2.png" />
     <Content Include="images\ice_air_seatmap.svg" />
     <Content Include="images\seat.svg" />
     <Content Include="index.html" />
