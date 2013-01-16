@@ -25,7 +25,7 @@ airlinesApp.prototype = function() {
         $seatPicker=$('#seatPicker');
         $('#tripDetail').live('pagebeforeshow',$.proxy(_initTripDetail,that));
         $('#boardingPass').live('pageshow',$.proxy(_initBoardingPass,that));
-        $('#home').live('pagebeforeshow',$.proxy(_initHome,that));
+        $('#home').live('pagebeforecreate',$.proxy(_initHome,that));
         $('#checkIn').live('pageshow', $.proxy(_initCheckIn,that));
         $('.tripDetail').live('click', function () {
         	var item = $(this);
@@ -112,7 +112,7 @@ airlinesApp.prototype = function() {
 		for (var i in data.flights) {
 			var flight = data.flights[i],
             currentSegment = flight.segments[flight.currentSegment];
-			$flightList.append('<li id="' + flight.id + '"><a href="#tripDetail">' + currentSegment.from + ' to ' + currentSegment.to + '</a></li>');
+			$flightList.append('<li id="' + flight.id + '"><a href="#tripDetail" data-transition="slide">' + currentSegment.from + ' to ' + currentSegment.to + '</a></li>');
 			var item = $('#' + flight.id, $flightList);
 			item.data('flight', flight);
 			if (flight.timeToCheckIn) {

@@ -6,10 +6,13 @@
     <AppIdentifier>com.telerik.airlines_sample_app</AppIdentifier>
     <ProjectName>airlines sample app</ProjectName>
     <IsRunnable>true</IsRunnable>
-    <TemplateAppName>Cordova200</TemplateAppName>
+    <TemplateAppName>Cordova220</TemplateAppName>
     <AndroidPermissions>android.permission.CAMERA;android.permission.VIBRATE;android.permission.ACCESS_COARSE_LOCATION;android.permission.ACCESS_FINE_LOCATION;android.permission.ACCESS_LOCATION_EXTRA_COMMANDS;android.permission.READ_PHONE_STATE;android.permission.INTERNET;android.permission.RECEIVE_SMS;android.permission.RECORD_AUDIO;android.permission.MODIFY_AUDIO_SETTINGS;android.permission.READ_CONTACTS;android.permission.WRITE_CONTACTS;android.permission.WRITE_EXTERNAL_STORAGE;android.permission.ACCESS_NETWORK_STATE</AndroidPermissions>
     <DeviceOrientations>Portrait;Landscape</DeviceOrientations>
     <iOSStatusBarStyle>Default</iOSStatusBarStyle>
+    <BundleVersion>1.0</BundleVersion>
+    <AndroidVersionCode>1</AndroidVersionCode>
+    <AndroidHardwareAcceleration>True</AndroidHardwareAcceleration>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="App_Resources" />
@@ -64,14 +67,13 @@
     <Content Include="images\seat.svg" />
     <Content Include="index.html" />
     <Content Include="jquery-mobile\images\ajax-loader.gif" />
-    <Content Include="jquery-mobile\images\ajax-loader.png" />
     <Content Include="jquery-mobile\images\icons-18-black.png" />
     <Content Include="jquery-mobile\images\icons-18-white.png" />
     <Content Include="jquery-mobile\images\icons-36-black.png" />
     <Content Include="jquery-mobile\images\icons-36-white.png" />
-    <Content Include="jquery-mobile\jquery-1.7.2.min.js" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.0.min.css" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.0.min.js" />
+    <Content Include="jquery-mobile\jquery-1.8.2.min.js" />
+    <Content Include="jquery-mobile\jquery.mobile-1.2.0.min.css" />
+    <Content Include="jquery-mobile\jquery.mobile-1.2.0.min.js" />
     <Content Include="jquery-mobile\stocktheme.css" />
     <Content Include="scripts\airlinedata.js" />
     <Content Include="scripts\main.js" />

@@ -2,14 +2,17 @@
 <html>
 	<head>
 		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="format-detection" content="telephone=no">
- 
-		<link href="jquery-mobile/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css" />
+        <meta charset="UTF-8" />
+		<link href="jquery-mobile/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css" />
 
 		<script src="cordova.js" type="text/javascript"></script>
-		<script src="jquery-mobile/jquery-1.7.2.min.js" type="text/javascript"></script>
-		<script src="jquery-mobile/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+		<script src="jquery-mobile/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+        <script>
+          $(function() { 
+            $.mobile.defaultHomeScroll = 0;
+          });
+        </script>
 		<script src="scripts/airlinedata.js" type="text/javascript"></script>
 		<script src="scripts/seatmapdrawing.js" type="text/javascript"></script>
 		<script src="scripts/main.js" type="text/javascript"></script>
@@ -66,7 +69,7 @@
 			<div data-role="content">
 				<ul data-role="listview" id="myTripsView" data-inset="true" data-theme="d">
 					<li>
-						<a href="#myTrips">
+						<a href="#myTrips" data-transition="slide">
 							MyTrips <span id="numberOfFlights"></span>
 						</a>
 					</li>
@@ -276,7 +279,7 @@
 								<span id="checkIn-seat"></span>
 							</li>
 							<li>
-								<a href="#seatPicker" data-transition="flip">Change Seat</a>
+								<a href="#seatPicker" data-transition="slide">Change Seat</a>
 							</li>
 						</ul>
 					</div>
