@@ -5,10 +5,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 function onDeviceReady() {
     
-	// Prevent screen bounce
-	$(document).bind('touchmove', function (e) {
-		e.preventDefault();
-	});
+	
 }
 
 var airlinesApp = function(){}
